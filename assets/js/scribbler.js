@@ -12,7 +12,9 @@ var getAll = function (selector, scope) {
 // setup typewriter effect in the terminal demo
 if (document.getElementsByClassName('demo').length > 0) {
   var i = 0;
-  var txt = `... Welcome 
+  var txt = `... ... ...
+
+            Welcome !
 
             Bryan is a freelance web developer situated in Vancouver, BC. specializing in clean, effective, practical programming practices.
 
