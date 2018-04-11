@@ -17,5 +17,5 @@ sitemap:
 
 
 <div id="describe-text">
-	<p>A developer of all trades</p>
+	<code>A developer of all trades</code>
 </div>
