@@ -15,5 +15,8 @@
 
 .hero__terminal pre {
   white-space: pre-line;
-  padding-top: 1rem;
+  padding-top: 0rem;
 }
+
+.hljs-attribute{color:#cda869}
+.hljs-regexp{color:#a5c261}

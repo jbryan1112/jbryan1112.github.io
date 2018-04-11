@@ -7,8 +7,9 @@ sitemap:
 ---
 <div class="hero__terminal">
   <pre>
-    <!-- Place your demo code here -->
-    <code class="shell-session demo">BSY-C ~ # </code>
+    <code class="shell-session demo">
+      <span class="hljs-attribute">BSY-C</span><span class="hljs-regexp"> ~ %</span>
+    </code>
   </pre>
 </div>
 
