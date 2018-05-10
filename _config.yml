@@ -1,7 +1,7 @@
 # Site settings
-title: BSY-C
+title: Sang-Yeon Cho
 description: >
-  Sang-Yeon Cho's Websume.
+  Sang-Yeon Cho's Portfolio made with Jekyll and Github Pages.
 
 baseurl: "/" # the subpath of your site, e.g. /blog/
 url: "https://jbryan1112.github.io/" # the base hostname & protocol for your site
