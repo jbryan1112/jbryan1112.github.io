@@ -1,12 +1,12 @@
 .hero {
   text-align: center;
-  background-color: var(--bg-color);
+  background-color: #F8F8FA;
   padding: 2rem 0 10rem 0;
 }
 
 .hero__title {
   font-weight: 900;
-  color: var(--primary-color);
+  color: #432E30;
 }
 
 .hero__description {
