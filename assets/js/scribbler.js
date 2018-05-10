@@ -25,7 +25,7 @@ if (document.getElementsByClassName('demo').length > 0) {
             - Sleep & Repeat
 
             `;
-  var speed = 80;
+  var speed = 100;
 
   function typeItOut () {
     if (i < txt.length) {
