@@ -1,18 +1,3 @@
-.hero {
-  text-align: center;
-  background-color: #F8F8FA;
-  padding: 2rem 0 10rem 0;
-}
-
-.hero__title {
-  font-weight: 900;
-  color: #432E30;
-}
-
-.hero__description {
-  margin: -1rem auto 2rem auto;
-}
-
 .hero__terminal {
   width: 60%;
   margin: auto auto;
