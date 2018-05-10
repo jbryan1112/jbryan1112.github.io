@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Sang-Yeon Cho
+title: 조상연
 subtitle: Bio
 ---
 
