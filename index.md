@@ -1,7 +1,7 @@
 ---
 layout: page
-title: WELCOME
-subtitle: My name is Bryan Cho
+title: Welcome
+subtitle: Vancouver, BC
 sitemap:
   priority: 0.9
 ---

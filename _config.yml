@@ -1,7 +1,6 @@
 # Site settings
-title: BSY-C
+title: Sang-Yeon Cho
 description: >
-  Sang-Yeon Cho's Websume.
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://jbryan1112.github.io/" # the base hostname & protocol for your site
@@ -9,7 +8,7 @@ url: "https://jbryan1112.github.io/" # the base hostname & protocol for your sit
 author:
   fullname: Sang-Yeon Cho
   github: jbryan1112
-  linkedin: bryan-cho-060a3460
+  linkedin: bryan-sang-yeon-cho-060a3460
   email: sycgeeks@gmail.com
 
 

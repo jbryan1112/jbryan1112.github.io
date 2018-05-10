@@ -12,23 +12,28 @@ var getAll = function (selector, scope) {
 // setup typewriter effect in the terminal demo
 if (document.getElementsByClassName('demo').length > 0) {
   var i = 0;
+<<<<<<< HEAD
   var txt = `Pssst ... ... ...
 
             Are you here for the news...?
 
             Bryan is a freelance web developer situated in Vancouver, BC. specializing in clean, effective, practical programming practices. The word is, he's up for hire!
+=======
+  var txt = `Welcome !
 
-            ### His Daily Schedule
+            Bryan is a freelance web developer working in Vancouver, BC. specializing in clean, effective, and practical programming practices.
+>>>>>>> gh-pages
 
-            - Meditate
-            - Cook
+            ### My Daily Schedule
+
+            - Read Medium
             - Code & Learn
-            - Exercise
+            - Exercise & Meditate
             - Family & Friends
             - Sleep & Repeat
 
             `;
-  var speed = 60;
+  var speed = 80;
 
   function typeItOut () {
     if (i < txt.length) {
