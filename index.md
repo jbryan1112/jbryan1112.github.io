@@ -7,9 +7,8 @@ sitemap:
 ---
 <div class="hero__terminal">
   <pre>
-    <code class="shell-session demo">
-      <span class="hljs-attribute">BSY-C</span><span class="hljs-regexp"> ~ %</span>
-    </code>
+    <!-- Place your demo code here -->
+    <code class="shell-session demo">BSY-C ~ # </code>
   </pre>
 </div>
 
@@ -17,5 +16,5 @@ sitemap:
 
 
 <div id="describe-text">
-	<code>A developer of all trades</code>
+	<p>A developer of all trades</p>
 </div>
