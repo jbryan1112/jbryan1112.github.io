@@ -1,8 +1,8 @@
 ---
 layout: page
-title:  "My first post"
+title:  "Dancing with WEBGL"
 date:   2018-05-11 16:16:01 -0600
-categories: jekyll update
+categories: WEBGL
 ---
 
 <script src="https://threejs.org/build/three.js"></script>
