@@ -83,7 +83,7 @@ categories: WEBGL
   			orientationsEnd.push( vector.x, vector.y, vector.z, vector.w );
   		}
   		var geometry = new THREE.InstancedBufferGeometry();
-  		geometry.maxInstancedCount = instances; // set so its initalized for dat.GUI, will be set in first draw otherwise
+
   		geometry.addAttribute( 'position', new THREE.Float32BufferAttribute( positions, 3 ) );
   		geometry.addAttribute( 'offset', new THREE.InstancedBufferAttribute( new Float32Array( offsets ), 3 ) );
   		geometry.addAttribute( 'color', new THREE.InstancedBufferAttribute( new Float32Array( colors ), 4 ) );
@@ -106,22 +106,19 @@ categories: WEBGL
   		//
   		renderer = new THREE.WebGLRenderer();
   		renderer.setPixelRatio( window.devicePixelRatio );
-  		renderer.setSize( window.innerWidth / 0.95 , window.innerHeight );
+  		renderer.setSize( window.innerWidth / 0.89 , window.innerHeight );
   		container.appendChild( renderer.domElement );
   		if ( renderer.extensions.get( 'ANGLE_instanced_arrays' ) === null ) {
   			document.getElementById( 'notSupported' ).style.display = '';
   			return;
   		}
-  		//
-  		var gui = new dat.GUI( { width: 350 } );
-  		gui.add( geometry, 'maxInstancedCount', 0, instances );
-  		//
+
   		window.addEventListener( 'resize', onWindowResize, false );
   	}
   	function onWindowResize( event ) {
   		camera.aspect = window.innerWidth / window.innerHeight;
   		camera.updateProjectionMatrix();
-  		renderer.setSize( window.innerWidth, window.innerHeight / 0.95);
+  		renderer.setSize( window.innerWidth, window.innerHeight / 0.89);
   	}
   	//
   	function animate() {
