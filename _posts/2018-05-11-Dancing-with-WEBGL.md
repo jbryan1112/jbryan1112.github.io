@@ -9,7 +9,7 @@ categories: WEBGL
 <script src="https://threejs.org/examples/js/libs/dat.gui.min.js"></script>
 <script src="https://threejs.org/examples/js/Detector.js"></script>
 
-<div id="secondthree" style="margin-left:-9%">
+<div id="secondthree">
   <script id="vertexShader" type="x-shader/x-vertex">
   	precision highp float;
   	uniform float sineTime;
