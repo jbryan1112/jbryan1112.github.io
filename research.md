@@ -8,7 +8,7 @@ sitemap:
 
 <script src="https://threejs.org/build/three.js"></script>
 
-<div id="firstthree"></div>
+<div id="firstthree" style="width:100%"></div>
 
 <script>
 	var camera, scene, renderer;
