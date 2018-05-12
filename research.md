@@ -8,6 +8,8 @@ sitemap:
 
 <script src="https://threejs.org/build/three.js"></script>
 
+<div id="firstthree"></div>
+
 <script>
 	var camera, scene, renderer;
 	var geometry, group;
@@ -41,7 +43,7 @@ sitemap:
 		renderer = new THREE.WebGLRenderer( { antialias: true } );
 		renderer.setPixelRatio( window.devicePixelRatio );
 		renderer.setSize( window.innerWidth, window.innerHeight );
-		document.body.appendChild( renderer.domElement );
+		document.getElementById("firstthree").appendChild( renderer.domElement );
 		//
 		document.addEventListener( 'mousemove', onDocumentMouseMove, false );
 		//
