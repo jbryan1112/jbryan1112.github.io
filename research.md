@@ -7,6 +7,9 @@ sitemap:
 ---
 
 <script src="https://threejs.org/build/three.js"></script>
+<script src="https://threejs.org/examples/js/libs/dat.gui.min.js"></script>
+<script src="https://threejs.org/examples/js/Detector.js"></script>
+
 
 <div id="firstthree">
   <script>
@@ -208,5 +211,4 @@ sitemap:
   		renderer.render( scene, camera );
   	}
   </script>
-
 <div>
