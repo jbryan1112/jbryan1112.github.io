@@ -118,7 +118,7 @@ categories: WEBGL
   	function onWindowResize( event ) {
   		camera.aspect = window.innerWidth / window.innerHeight;
   		camera.updateProjectionMatrix();
-  		renderer.setSize( window.innerWidth, window.innerHeight / 0.89);
+  		renderer.setSize( window.innerWidth / 0.89, window.innerHeight);
   	}
   	//
   	function animate() {
