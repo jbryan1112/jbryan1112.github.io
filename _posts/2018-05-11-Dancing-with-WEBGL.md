@@ -106,7 +106,7 @@ categories: WEBGL
   		//
   		renderer = new THREE.WebGLRenderer();
   		renderer.setPixelRatio( window.devicePixelRatio );
-  		renderer.setSize( window.innerWidth / 1.23 , window.innerHeight / 1.23);
+  		renderer.setSize( secondthree.innerWidth , secondthree.innerHeight );
   		container.appendChild( renderer.domElement );
   		if ( renderer.extensions.get( 'ANGLE_instanced_arrays' ) === null ) {
   			document.getElementById( 'notSupported' ).style.display = '';
@@ -116,9 +116,9 @@ categories: WEBGL
   		window.addEventListener( 'resize', onWindowResize, false );
   	}
   	function onWindowResize( event ) {
-  		camera.aspect = window.innerWidth / window.innerHeight;
+  		camera.aspect = secondthree.innerWidth / secondthree.innerHeight;
   		camera.updateProjectionMatrix();
-  		renderer.setSize( window.innerWidth / 1.45, window.innerHeight / 1.23);
+  		renderer.setSize( secondthree.innerWidth , secondthree.innerHeight);
   	}
   	//
   	function animate() {
