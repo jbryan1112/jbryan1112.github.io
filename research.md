@@ -7,10 +7,9 @@ sitemap:
 ---
 
 <script src="https://threejs.org/build/three.js"></script>
-<script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
 
 <script>
-	var camera, scene, renderer, stats;
+	var camera, scene, renderer;
 	var geometry, group;
 	var mouseX = 0, mouseY = 0;
 	var windowHalfX = window.innerWidth / 2;
@@ -44,9 +43,6 @@ sitemap:
 		renderer.setSize( window.innerWidth, window.innerHeight );
 		document.body.appendChild( renderer.domElement );
 		//
-		stats = new Stats();
-		document.body.appendChild( stats.dom );
-		//
 		document.addEventListener( 'mousemove', onDocumentMouseMove, false );
 		//
 		window.addEventListener( 'resize', onWindowResize, false );
@@ -66,7 +62,6 @@ sitemap:
 	function animate() {
 		requestAnimationFrame( animate );
 		render();
-		stats.update();
 	}
 	function render() {
 		var time = Date.now() * 0.001;
@@ -82,5 +77,3 @@ sitemap:
 		renderer.render( scene, camera );
 	}
 </script>
-
-/////
