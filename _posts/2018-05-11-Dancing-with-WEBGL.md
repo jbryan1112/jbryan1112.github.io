@@ -9,7 +9,7 @@ categories: WEBGL
 <script src="https://threejs.org/examples/js/libs/dat.gui.min.js"></script>
 <script src="https://threejs.org/examples/js/Detector.js"></script>
 
-<div id="secondthree">
+<div id="secondthree" style="margin-left:-10%">
   <script id="vertexShader" type="x-shader/x-vertex">
   	precision highp float;
   	uniform float sineTime;
@@ -106,7 +106,7 @@ categories: WEBGL
   		//
   		renderer = new THREE.WebGLRenderer();
   		renderer.setPixelRatio( window.devicePixelRatio );
-  		renderer.setSize( container.innerWidth , container.innerHeight );
+  		renderer.setSize( window.innerWidth , window.innerHeight );
   		container.appendChild( renderer.domElement );
   		if ( renderer.extensions.get( 'ANGLE_instanced_arrays' ) === null ) {
   			document.getElementById( 'notSupported' ).style.display = '';
@@ -116,9 +116,9 @@ categories: WEBGL
   		window.addEventListener( 'resize', onWindowResize, false );
   	}
   	function onWindowResize( event ) {
-  		camera.aspect = container.innerWidth / container.innerHeight;
+  		camera.aspect = window.innerWidth / window.innerHeight;
   		camera.updateProjectionMatrix();
-  		renderer.setSize( container.innerWidth , container.innerHeight);
+  		renderer.setSize( window.innerWidth , window.innerHeight);
   	}
   	//
   	function animate() {
