@@ -1,11 +1,11 @@
 ---
 layout: page
 title:  "Dancing with WEBGL"
-date:   2018-05-11 16:16:01 -0600
+date:   2018-05-11 16:16:42 -0600
 categories: WEBGL
 ---
 **What is WebGL**
-WebGL is a low-level Javascript API giving you access to the power of a computer's graphic hardware. Normally when rendering dynamic images in the browser, the solution was using Canvas. And with the complexity in certain dynamic images, the Canvas used a lot of CPU power. WebGL however uses the GPU for computationally expensive processes.
+WebGL is a low-level JavaScript API giving you access to the power of a computer's graphic hardware. Normally when rendering dynamic images in the browser, the solution was using Canvas. And with the complexity in certain dynamic images, the Canvas used a lot of CPU power. WebGL however uses the GPU for computationally expensive processes.
 
 WebGL allows the render of interactive 3D graphics without having to use plug-ins. It is supported in all major browsers including IE11 as well as mobile platforms. WebGL device support is also growing quickly. In addition to running on all major desktop browsers, WebGL runs on iOS and Android devices.
 
@@ -25,7 +25,9 @@ Some instances when you should use WebGL:
 **Using ThreeJS, a powerful WebGL framework.**
 
 1. Add a scene
-```var scene = new THREE.Scene();```
+```
+var scene = new THREE.Scene();
+```
 
 2. Add a camera
 ```
@@ -51,7 +53,7 @@ function animate()
 function render()
 ```
 
-Here is a full example
+**Here is a full example**
 ```
 // Set the scene size.
 const WIDTH = window.innerWidth;
@@ -145,7 +147,7 @@ function update () {
 requestAnimationFrame(update);
 ```
 
-The above is a simple example of what WebGL can do for your next web project. Here is a more complex example.
+*The above is a simple example of what WebGL can do for your next web project. Below is a more complex example exemplifying the limitless power of using WebGL in web projects.*
 
 <script src="https://threejs.org/build/three.js"></script>
 <script src="https://threejs.org/examples/js/libs/dat.gui.min.js"></script>
