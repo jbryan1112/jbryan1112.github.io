@@ -4,26 +4,142 @@ title:  "Dancing with WEBGL"
 date:   2018-05-11 16:16:01 -0600
 categories: WEBGL
 ---
-
+**What is WebGL**
 WebGL is a low-level Javascript API giving you access to the power of a computer's graphic hardware. Normally when rendering dynamic images in the browser, the solution was using Canvas. And with the complexity in certain dynamic images, the Canvas used a lot of CPU power. WebGL however uses the GPU for computationally expensive processes.
 
-WebGL device support is growing fast. In addition to running on all major desktop browsers, WebGL runs on iOS and Android devices.
-
-WebGL allows the render of interactive 3D graphics without having to use plug-ins. It is supported in all major browsers including IE11 as well as mobile platforms.
+WebGL allows the render of interactive 3D graphics without having to use plug-ins. It is supported in all major browsers including IE11 as well as mobile platforms. WebGL device support is also growing quickly. In addition to running on all major desktop browsers, WebGL runs on iOS and Android devices.
 
 WebGL is incredibly fast and is able to utilize hard ware acceleration. With performance in mind, WebGL is performs better than other options such as CSS, Canvas, SVG, and plug-in based choices (Flash is dead).
 
-My favorite part about WebGL is its ability to utilize "shaders" to produce complex visual effects. It's implementation can simulate water or flames!
+A powerful feature of WebGL is its ability to utilize "shaders" to produce complex visual effects. It's implementation can simulate water or flames!
 
 Some instances when you should use WebGL:
 - Data visualization -> some practical examples include viewing 3D images of MRI scans or survey data.
 - Games -> Obvious; Unity Engine has HTML5 (via WebGL) export.
 - Interactive Web pages-> this allows users to explore your product from different angles
 
-Why use WebGL?
+**Why use WebGL?**
 - It's easy to use! Any script kiddie can get up and rolling in a matter of days!
 - WebGL frameworks/libraries also help to ease the learning curve
 
+**Using ThreeJS, a powerful WebGL framework.**
+
+1. Add a scene
+`var scene = new THREE.Scene();`
+
+2. Add a camera
+`var camera = new THREE.PerspectiveCamera();`
+
+3. Add a renderer
+`var renderer = new THREE.WebGLRenderer();`
+
+4. Attach to the DOM
+`document.body.appendChild( renderer.domElement );`
+
+5. Create a 3D object using Blender. Add Lights and a mesh.
+
+6. Add behaviour using:
+```
+function onWindowResize()
+function animate()
+function render()
+```
+
+Here is a full example
+```
+// Set the scene size.
+const WIDTH = window.innerWidth;
+const HEIGHT = window.innerHeight;
+
+// Set some camera attributes.
+const VIEW_ANGLE = 45;
+const ASPECT = WIDTH / HEIGHT;
+const NEAR = 0.1;
+const FAR = 10000;
+
+// Get the DOM element to attach to
+const container =
+    document.querySelector('#container');
+
+// Create a WebGL renderer, camera
+// and a scene
+const renderer = new THREE.WebGLRenderer();
+const camera =
+    new THREE.PerspectiveCamera(
+        VIEW_ANGLE,
+        ASPECT,
+        NEAR,
+        FAR
+    );
+
+const scene = new THREE.Scene();
+
+// Add the camera to the scene.
+scene.add(camera);
+
+// Start the renderer.
+renderer.setSize(WIDTH, HEIGHT);
+
+// Attach the renderer-supplied
+// DOM element.
+container.appendChild(renderer.domElement);
+
+// create a point light
+const pointLight =
+  new THREE.PointLight(0xFFFFFF);
+
+// set its position
+pointLight.position.x = 10;
+pointLight.position.y = 50;
+pointLight.position.z = 130;
+
+// add to the scene
+scene.add(pointLight);
+
+// create the sphere's material
+const sphereMaterial =
+  new THREE.MeshLambertMaterial(
+    {
+      color: 0xCC0000
+    });
+
+// Set up the sphere vars
+const RADIUS = 50;
+const SEGMENTS = 16;
+const RINGS = 16;
+
+// Create a new mesh with
+// sphere geometry - we will cover
+// the sphereMaterial next!
+const sphere = new THREE.Mesh(
+
+  new THREE.SphereGeometry(
+    RADIUS,
+    SEGMENTS,
+    RINGS),
+
+  sphereMaterial);
+
+// Move the Sphere back in Z so we
+// can see it.
+sphere.position.z = -300;
+
+// Finally, add the sphere to the scene.
+scene.add(sphere);
+
+function update () {
+  // Draw!
+  renderer.render(scene, camera);
+
+  // Schedule the next frame.
+  requestAnimationFrame(update);
+}
+
+// Schedule the first frame.
+requestAnimationFrame(update);
+```
+
+The above is a simple example of what WebGL can do for your next web project. Here is a more complex example.
 
 <script src="https://threejs.org/build/three.js"></script>
 <script src="https://threejs.org/examples/js/libs/dat.gui.min.js"></script>

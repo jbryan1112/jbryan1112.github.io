@@ -1,0 +1,22 @@
+---
+layout: page
+title:  "Animating with Spritesheets"
+date:   2018-05-12 01:01:01 -0600
+categories: Animation
+---
+<style>
+  .monster {
+    margin: 0 auto;
+    width: 70px;
+    height: 94px;
+    background: url('/assets/img/bluemansprite.png') left center;
+    animation: play 0.8s steps(6) infinite;
+  }
+  @keyframes play {
+   100% { background-position: -429px; }
+}
+</style>
+
+
+<div class="monster">
+</div>

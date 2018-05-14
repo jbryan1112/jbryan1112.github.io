@@ -2,24 +2,8 @@
 layout: page
 title:  "Animating with SVG"
 date:   2018-05-12 01:01:01 -0600
-categories: SVG
+categories: Animation
 ---
-<style>
-  .monster {
-    margin: 0 auto;
-    width: 70px;
-    height: 94px;
-    background: url('/assets/img/bluemansprite.png') left center;
-    animation: play 0.8s steps(6) infinite;
-  }
-  @keyframes play {
-   100% { background-position: -429px; }
-}
-</style>
-
-
-<div class="monster">
-</div>
 
 Scalable Vector Graphics (SVG) is an XML-based vector image format for two dimensional graphics with support for interactivity and animation.
 
@@ -30,5 +14,3 @@ When choosing to use SVG it is wise to understand the pros and cons compared to 
 - Scalability is also a huge advtange of using SVG. Not only is it possible to view the content of a SVG file in any browser (yes, even IE), SVG images do not lose quality even when it is enlarged. It is safe to use SVG images with Retina display.
 
 SVG is mainly used for creating icons for websites. Images can be stretched and compressed without loss in quality in turn preserving its high pixel density without signs of blurriness.
-
- <link href='//fonts.googleapis.com/css?family=Signika+Negative:300,400' rel='stylesheet' type='text/css'>
