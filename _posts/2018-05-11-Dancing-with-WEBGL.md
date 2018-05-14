@@ -4,7 +4,7 @@ title:  "Dancing with WEBGL"
 date:   2018-05-11 16:16:42 -0600
 categories: WEBGL
 ---
-**What is WebGL**
+# What is WebGL
 WebGL is a low-level JavaScript API giving you access to the power of a computer's graphic hardware. Normally when rendering dynamic images in the browser, the solution was using Canvas. And with the complexity in certain dynamic images, the Canvas used a lot of CPU power. WebGL however uses the GPU for computationally expensive processes.
 
 WebGL allows the render of interactive 3D graphics without having to use plug-ins. It is supported in all major browsers including IE11 as well as mobile platforms. WebGL device support is also growing quickly. In addition to running on all major desktop browsers, WebGL runs on iOS and Android devices.
@@ -18,11 +18,11 @@ Some instances when you should use WebGL:
 - Games -> Obvious; Unity Engine has HTML5 (via WebGL) export.
 - Interactive Web pages-> this allows users to explore your product from different angles
 
-**Why use WebGL?**
+## Why use WebGL?
 - It's easy to use! Any script kiddie can get up and rolling in a matter of days!
 - WebGL frameworks/libraries also help to ease the learning curve
 
-**Using ThreeJS, a powerful WebGL framework.**
+### Using ThreeJS, a powerful WebGL framework.
 
 1. Add a scene
 ```
@@ -53,7 +53,7 @@ function animate()
 function render()
 ```
 
-**Here is a full example**
+### Here is a full example
 ```
 // Set the scene size.
 const WIDTH = window.innerWidth;
