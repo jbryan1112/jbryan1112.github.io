@@ -25,16 +25,22 @@ Some instances when you should use WebGL:
 **Using ThreeJS, a powerful WebGL framework.**
 
 1. Add a scene
-`var scene = new THREE.Scene();`
+```var scene = new THREE.Scene();```
 
 2. Add a camera
-`var camera = new THREE.PerspectiveCamera();`
+```
+var camera = new THREE.PerspectiveCamera();
+```
 
 3. Add a renderer
-`var renderer = new THREE.WebGLRenderer();`
+```
+var renderer = new THREE.WebGLRenderer();
+```
 
 4. Attach to the DOM
-`document.body.appendChild( renderer.domElement );`
+```
+document.body.appendChild( renderer.domElement );
+```
 
 5. Create a 3D object using Blender. Add Lights and a mesh.
 

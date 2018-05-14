@@ -19,9 +19,6 @@ img {margin: 0 auto;}
 
 </style>
 
-<div class="monster">
-</div>
-
 A spritesheet is a bitmap image file that contains several smaller graphics in a tiled grid arrangement. By Compiling several graphics into a single file, you are able to animate graphics while only needing to load a single file.
 
 <img src="/assets/img/bluemansprite.png">
@@ -57,3 +54,6 @@ We are almost done. At this point, we can create a @keyframe property of CSS to 
 ```
 
 Now, the animation will run 7 frames in its 0.8 second duration.
+
+<div class="monster">
+</div>
