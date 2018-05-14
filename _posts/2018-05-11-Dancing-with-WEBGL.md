@@ -7,7 +7,7 @@ categories: WEBGL
 
 WebGL is a low-level Javascript API giving you access to the power of a computer's graphic hardware. Normally when rendering dynamic images in the browser, the solution was using Canvas. And with the complexity in certain dynamic images, the Canvas used a lot of CPU power. WebGL however uses the GPU for computationally expensive processes.
 
-WebGL device support is growing fast. In addition to running on all major desktop browsers, WebGL runs on iOS and Android devices. 
+WebGL device support is growing fast. In addition to running on all major desktop browsers, WebGL runs on iOS and Android devices.
 
 WebGL allows the render of interactive 3D graphics without having to use plug-ins. It is supported in all major browsers including IE11 as well as mobile platforms.
 
@@ -16,13 +16,13 @@ WebGL is incredibly fast and is able to utilize hard ware acceleration. With per
 My favorite part about WebGL is its ability to utilize "shaders" to produce complex visual effects. It's implementation can simulate water or flames!
 
 Some instances when you should use WebGL:
--Data visualization -> some practical examples include viewing 3D images of MRI scans or survey data.
--Games -> Obvious; Unity Engine has HTML5 (via WebGL) export.
--Interactive Web pages-> this allows users to explore your product from different angles
+- Data visualization -> some practical examples include viewing 3D images of MRI scans or survey data.
+- Games -> Obvious; Unity Engine has HTML5 (via WebGL) export.
+- Interactive Web pages-> this allows users to explore your product from different angles
 
 Why use WebGL?
--It's easy to use! Any script kiddie can get up and rolling in a matter of days!
--WebGL frameworks/libraries also help to ease the learning curve
+- It's easy to use! Any script kiddie can get up and rolling in a matter of days!
+- WebGL frameworks/libraries also help to ease the learning curve
 
 
 <script src="https://threejs.org/build/three.js"></script>
