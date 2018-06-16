@@ -12,20 +12,16 @@ var getAll = function (selector, scope) {
 // setup typewriter effect in the terminal demo
 if (document.getElementsByClassName('demo').length > 0) {
   var i = 0;
-  var txt = `Welcome !
+  var txt = `Wake up, Neo...
 
-            Bryan is a freelance web developer working in Vancouver, BC. specializing in clean, effective, and practical programming practices.
+            The Matrix has you...
 
-            ### My Daily Schedule
+            Follow the white rabbit.
 
-            - Read Medium
-            - Code & Learn
-            - Exercise & Meditate
-            - Family & Friends
-            - Sleep & Repeat
 
+            Knock, knock, Neo.
             `;
-  var speed = 170;
+  var speed = 360;
 
   function typeItOut () {
     if (i < txt.length) {
