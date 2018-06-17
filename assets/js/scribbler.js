@@ -21,7 +21,7 @@ if (document.getElementsByClassName('demo').length > 0) {
 
             Knock, knock, Neo.
             `;
-  var speed = 360;
+  var speed = 20;
 
   function typeItOut () {
     if (i < txt.length) {
