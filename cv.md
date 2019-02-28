@@ -16,5 +16,5 @@ My personal skills including problem solving, adaptability, and decision-making.
 As a promising candidate, I am looking forward to hearing back from you.
 
 
-Best regards
+Best regards,
 ### *Sang-Yeon Cho*
