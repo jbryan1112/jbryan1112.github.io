@@ -1,7 +1,7 @@
 # Site settings
 title: Sang-Yeon Cho
 description: >
-  Sang-Yeon Cho's Portfolio made with Jekyll and Github Pages.
+  Now: Jekyll and Github Pages
 
 baseurl: "/" # the subpath of your site, e.g. /blog/
 url: "https://jbryan1112.github.io/" # the base hostname & protocol for your site
@@ -9,7 +9,7 @@ url: "https://jbryan1112.github.io/" # the base hostname & protocol for your sit
 author:
   fullname: Sang-Yeon Cho
   github: jbryan1112
-  linkedin: bryan-sang-yeon-cho-060a3460
+  linkedin: syc1112
   email: sycgeeks@gmail.com
 
 
