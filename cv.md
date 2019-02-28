@@ -1,14 +1,12 @@
 ---
 layout: page
-title: R&D
-subtitle: Research & Development
+title: Cover letter
+subtitle: To Article
 sitemap:
   priority: 0.9
 ---
-##Cover Letter
-###Bryan (Sang-Yeon) Cho
-
-####To Article:
+## Cover Letter
+### Bryan (Sang-Yeon) Cho
 
 I am pleased to submit my resume for the position of Front-End Software Developer at Article. Along with my work experience and qualifications, I am confident in my abilities to become a part of your hard-working team.
 
