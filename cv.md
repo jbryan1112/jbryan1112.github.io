@@ -17,4 +17,4 @@ As a promising candidate, I am looking forward to hearing back from you.
 
 
 Best regards,
-Bryan (Sang-Yeon) Cho
+### *Sang-Yeon Cho*
