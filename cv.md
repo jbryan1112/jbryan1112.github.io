@@ -5,9 +5,8 @@ subtitle: To Article
 sitemap:
   priority: 0.9
 ---
-## Cover Letter
-### Bryan (Sang-Yeon) Cho
 
+### *To Article*
 I am pleased to submit my resume for the position of Front-End Software Developer at Article. Along with my work experience and qualifications, I am confident in my abilities to become a part of your hard-working team.
 
 With a curiosity and a strong interest for the web and its constant evolution, I have the ability and drive to effectively collaborate with colleagues and stay organized, resourceful, and detail oriented. As someone who is eager to grow, I believe I can positively contribute to your team and thrive in a fast-paced innovative environment.
